@@ -140,7 +140,6 @@
     <ClCompile Include="src\framework\pages\pagedefault.cpp" />
     <ClCompile Include="src\framework\pages\pagelegitbot.cpp" />
     <ClCompile Include="src\framework\var.cpp" />
-    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
