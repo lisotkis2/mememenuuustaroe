@@ -126,6 +126,7 @@
     <ClCompile Include="src\framework\custom_imgui.cpp" />
     <ClCompile Include="src\framework\flowstrip.cpp" />
     <ClCompile Include="src\framework\menu.cpp" />
+    <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\framework\pages\pageaimassist.cpp" />
     <ClCompile Include="src\framework\pages\pagechams.cpp" />
     <ClCompile Include="src\framework\pages\pageconfigs.cpp" />
