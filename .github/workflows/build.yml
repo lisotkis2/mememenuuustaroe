@@ -1,0 +1,25 @@
+name: Build DLL
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Build DLL
+      run: msbuild MemeSenseFramework.sln /p:Configuration=Release /p:Platform=x64 /p:OutDir=./output/
+
+    - name: Upload DLL
+      uses: actions/upload-artifact@v4
+      with:
+        name: MemeSenseDLL
+        path: output/MemeSenseFramework.dll
